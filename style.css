@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+div{
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+#search{
+    width: 99.3%;
+}
+#main{
+    padding: 20px;
+}
+ul{
+    padding: 0px;
+    height: 10px;
+    margin: 0px;
+    display: inline-block;
+}

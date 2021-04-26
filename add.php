@@ -2,54 +2,38 @@
 <HTML>
     <HEAD>
         <TITLE> Dodaj grzyba </TITLE>
-
-        <SCRIPT>
-
-        </SCRIPT>
-
-        <STYLE>
-            div{
-                border: 1px solid black;
-                margin-left: 20px;
-                margin-right: 20px;
-                margin-top: 20px;
-                text-align: center;
-            }
-            #search{
-                width: 99.3%;
-            }
-            #main{
-                padding-bottom: 20px;
-            }
-        </STYLE>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <SCRIPT src="searcher/searcher.js"></SCRIPT>
+        <link rel="stylesheet" href="style.css">
     </HEAD>
 
     <BODY>
+    <h1> Add mushroom record </h1>
         <div id="search-box">
-            <input type="text" id="search" placeholder="Szukaj grzyba">
+            <input type="text" oninput="newQuery()" id="search" placeholder="Find mushroom">
+            <ul>
+                <span id="found-list">
+                </span>
+            </ul>
         </div>
         <div id="main">
-        <h1> Add mushroom record </h1>
-         <FORM>
+        
+         <FORM action="commit.php" method="post">
 
             Family: 
-            <SELECT name="familyid">
-                <option value="1">Borowiki</option>
-            </SELECT> <br>
+            <input type="text" id="type" readonly><br>
 
             Type:
-            <SELECT name="type">
-                <option value="1">Borowik szlachetny</option>
-            </SELECT> <br> <br>
+            <input type="text" id="name" readonly><br>
+            Mushroom id: <input type="number" id="id" name="id" readonly><br><br>
             
             Head radius:
             <input type="number" name="radius"> <br><br>
 
             Picture/Pictures names:
             <input type="text" name="picture-name"><br><br>
-
-            <input type="submit" value="Dodaj grzyba">
-
+            Description:<br><textarea name="description" rows="15" cols="40"></textarea><br><br>
+            <input type="submit" value="Add mushroom">
          </FORM>
          </div>
     </BODY>
