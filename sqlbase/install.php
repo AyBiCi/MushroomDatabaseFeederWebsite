@@ -19,7 +19,7 @@ $count = 0;
 
 //Run sqlscript on sql server
 $sql_script = file_get_contents("sqlscript.sql");
-$queries = preg_split("/;/",$sql_script);
+$queries = preg_split('/\$\$/',$sql_script);
 
 foreach( $queries as $query){
     if($query != "")
@@ -27,8 +27,7 @@ foreach( $queries as $query){
 }
 
 foreach($types as $type){
-    echo $type;
-    $name = substr($type, 10);
+    $name = substr($type, 13);
     $data = fopen($type, "r");
     mysqli_query($base, 'insert into types values('.$type_id.', "'.$name.'")');
 

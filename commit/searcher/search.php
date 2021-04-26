@@ -1,5 +1,5 @@
 <?php
-    include("../sql.php");
+    include("../../sqlbase/sql.php");
 
     if(isset($_GET["query"])){
         $z = 'select mushrooms.ID,
