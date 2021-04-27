@@ -9,8 +9,8 @@ function newQuery(){
             let id = d[i].id;
             let type = d[i].type_name;
             let name = d[i].name;
-            list.innerHTML += '<li onclick=\'setmushroom('+id+', "'+type+'","'+name+'")\'>'+
-            type+" - "+name+"</li>";
+            list.innerHTML += '<div id="search-item" onclick=\'setmushroom('+id+', "'+type+'","'+name+'")\'>'+
+            type+" - "+name+"</div>";
         }
     });
 }

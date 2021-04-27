@@ -2,6 +2,7 @@
 <HTML lang="pl-PL">
     <HEAD>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../style.css?3">
     </HEAD>
     <BODY>
         <?php

@@ -1,15 +1,12 @@
 body{
-    text-align: center;
-}
-div{
-    border: 1px solid black;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    text-align: center;
+    background-color: lightsalmon;
+    color: midnightblue;
+    padding: 0px;
+    margin: 0px;
 }
 #search{
-    width: 99.3%;
+    width: 100%;
+    margin-left:auto;
 }
 #main{
     padding: 20px;
@@ -19,4 +16,52 @@ ul{
     height: 10px;
     margin: 0px;
     display: inline-block;
+    text-align: center;
+}
+td,th{
+    border: 1px solid black;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#menu{
+    width: 100%;
+    height: 50px;
+    font-size: 45px;
+    background-color: chocolate;
+    margin-bottom: 20px;
+}
+#logo{
+    width: 35%;
+    float: left;
+}
+#menubuton{
+    height: 100%;
+    width: 10%;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    background-color: darkgoldenrod;
+    color:darkgreen;
+}
+#menubuton:hover{
+    background-color: darkturquoise;
+}
+#found-list{
+    text-align: center;
+}
+#search-box{
+    width: 100%;
+    text-align: center;
+}
+#search-item{
+    width: 100%;
+    background-color: darkcyan;
+    border-bottom: 1px solid black;
+}
+#search-item:hover{
+    background-color: cyan;
+    cursor: pointer;
 }
