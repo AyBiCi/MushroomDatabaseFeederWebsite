@@ -6,18 +6,12 @@
         <link rel="stylesheet" href="../style.css?2">
     </HEAD>
     <BODY>
-        <div id="menu">
-            <div id="logo">GRZYBHUB</div>
-            <a href="commitlist.php"><div id="menubuton">Commity</div></a>
-        </div>
-
+        <?php include("../start.php"); ?>
         <table>
             <tr>
                 <th> ID </th> <th> Nazwa </th> <th> Data utworzenia </th>
             </tr>
         <?php
-            include("../sqlbase/sql.php");
-
             $query = mysqli_query($base,"select * from commitsview");
 
             while($row = mysqli_fetch_array($query)){
@@ -26,7 +20,7 @@
                 echo "</tr>";
             }
         ?>
-        <tr><td>+</td><td><a href="add.html">Dodaj nowy</a></td><td></td></tr>
+        <tr><td>+</td><td><a href="add.php">Dodaj nowy</a></td><td></td></tr>
         </table>
     </BODY>
 </HTML>

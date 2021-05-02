@@ -4,22 +4,21 @@
         <TITLE> Dodaj grzyba </TITLE>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <SCRIPT src="searcher/searcher.js"></SCRIPT>
-        <link rel="stylesheet" href="../style.css?5">
+        <link rel="stylesheet" href="../style.css?6">
         <meta charset="utf-8">
     </HEAD>
 
     <BODY>
-        <div id="menu">
-            <div id="logo">GRZYBHUB</div>
-            <a href="commitlist.php"><div id="menubuton">Commity</div></a>
-        </div>
+        <?php include("../start.php"); ?>
+        
+        <div id="main">
     <h1> Add mushroom record </h1>
         <div id="search-box">
             <input type="text" oninput="newQuery()" id="search" placeholder="Find mushroom">
                 <span id="found-list">
                 </span>
             </div>
-        <div id="main">
+            <br><br>
         
          <FORM action="commit.php" method="post">
 

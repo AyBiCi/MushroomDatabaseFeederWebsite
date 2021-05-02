@@ -2,11 +2,12 @@
 <HTML lang="pl-PL">
     <HEAD>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../style.css?3">
+        <link rel="stylesheet" href="../style.css?10">
     </HEAD>
     <BODY>
+        <?php include("../start.php");?>
+        <div id="main">
         <?php
-            include("../sqlbase/sql.php");
             
             $table = array();
 
@@ -26,5 +27,6 @@
             Rozmiary głów: <b> <?= $table["head_radius"]; ?> </b> <br>
             Opis: <b><?= $table["description"] ?> </b>
         </p>
+        </div>
     </BODY>
 </HTML>
